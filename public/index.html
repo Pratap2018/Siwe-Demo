@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in with ethereum</title>
+</head>
+
+<body>
+    <div id="nav">
+        <button class="cool-button" type="button" id="logout">
+            <img src="assets/logout.png" alt="Icon description">
+            <span>Logout</span>
+        </button>
+        <button class="cool-button" type="button" id="metamask">
+            <img src="assets/metamask.png" alt="Icon description">
+            <span>Metamask</span>
+        </button>
+
+        <button class="cool-button" type="button" id="walletconnect">
+            <img src="assets/Icon.png" alt="Icon description">
+            <span>WalletConnect</span>
+        </button>
+    </div>
+    
+
+    <script src="./bundle.js" defer></script>
+
+    <style>
+        #nav {
+            display: flex;
+            float: right;
+        }
+
+        #walletconnet #metamask {
+            display: inline-block;
+
+        }
+
+        .cool-button {
+            display: flex;
+            align-items: center;
+            background-color: #4285F4;
+            border: none;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .cool-button:hover {
+            transform: translateY(-2px);
+            cursor: pointer;
+
+        }
+
+        .cool-button img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            filter: brightness(90%);
+        }
+
+        .cool-button span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+
+</html>
